@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 import LandingPage from "./components/LandingPage";
 import MoodPage from "./components/MoodPage";
