@@ -3,12 +3,12 @@ import React from "react";
 const apps = [
   {
     name: "Meditation App",
-    url: "http://localhost:5174",  // Local Vite meditation app
+    url: "/meditation",
     icon: "/icons/meditation.png"
   },
   {
     name: "Music Therapy App",
-    url: "http://localhost:3000",  // Local CRA music therapy app
+    url: "/music",
     icon: "/icons/music.png"
   }
 ];
