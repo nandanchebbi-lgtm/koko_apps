@@ -1,6 +1,5 @@
 {
   "version": 2,
-
   "builds": [
     {
       "src": "app-hub/package.json",
@@ -13,12 +12,11 @@
       "config": { "distDir": "dist" }
     },
     {
-      "src": "music-therapy-app/package.json",
+      "src": "music-therapy-flow/package.json",
       "use": "@vercel/static-build",
       "config": { "distDir": "build" }
     }
   ],
-
   "routes": [
     {
       "src": "^/$",
@@ -30,7 +28,7 @@
     },
     {
       "src": "^/music(/.*)?$",
-      "dest": "/music-therapy-app/build/index.html"
+      "dest": "/music-therapy-flow/build/index.html"
     }
   ]
 }
