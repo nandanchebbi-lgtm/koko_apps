@@ -1,26 +1,33 @@
 {
   "version": 2,
-  "outputDirectory": "app-hub/dist",
+
+  "builds": [
+    {
+      "src": "app-hub/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "meditation-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    },
+    {
+      "src": "music-therapy-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
+    }
+  ],
 
   "routes": [
     {
-      "src": "^/assets/(.*)$",
-      "dest": "/assets/$1"
+      "src": "^/assets/(.*)",
+      "dest": "/app-hub/dist/assets/$1"
     },
     {
       "src": "^/favicon.ico$",
-      "dest": "/favicon.ico"
+      "dest": "/app-hub/dist/favicon.ico"
     },
-
-    {
-      "src": "^/meditation/assets/(.*)$",
-      "dest": "/meditation-app/dist/assets/$1"
-    },
-    {
-      "src": "^/music/assets/(.*)$",
-      "dest": "/music-therapy-app/build/static/$1"
-    },
-
     {
       "src": "^/meditation(/.*)?$",
       "dest": "/meditation-app/dist/index.html"
@@ -29,10 +36,9 @@
       "src": "^/music(/.*)?$",
       "dest": "/music-therapy-app/build/index.html"
     },
-
     {
       "src": "^/(.*)$",
-      "dest": "/index.html"
+      "dest": "/app-hub/dist/index.html"
     }
   ]
 }
