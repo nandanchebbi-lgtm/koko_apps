@@ -2,6 +2,7 @@
   "name": "koko-apps",
   "private": true,
   "scripts": {
-    "build": "npm run build --prefix app-hub && npm run build --prefix meditation-app && npm run build --prefix music-therapy-app"
+    "install:apps": "npm install --prefix app-hub && npm install --prefix meditation-app && npm install --prefix music-therapy-app",
+    "build": "npm run install:apps && npm run build --prefix app-hub && npm run build --prefix meditation-app && npm run build --prefix music-therapy-app"
   }
 }
