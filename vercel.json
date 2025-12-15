@@ -3,16 +3,19 @@
 
   "builds": [
     {
-      "src": "app-hub/dist/**",
-      "use": "@vercel/static"
+      "src": "app-hub/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     },
     {
-      "src": "meditation-app/dist/**",
-      "use": "@vercel/static"
+      "src": "meditation-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     },
     {
-      "src": "music-therapy-app/build/**",
-      "use": "@vercel/static"
+      "src": "music-therapy-app/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "build" }
     }
   ],
 
