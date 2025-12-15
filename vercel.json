@@ -26,25 +26,13 @@
   ],
 
   "routes": [
-    {
-      "src": "^/$",
-      "dest": "/app-hub/dist/index.html"
-    },
-    {
-      "src": "^/meditation/?$",
-      "dest": "/meditation-app/dist/index.html"
-    },
-    {
-      "src": "^/meditation/(.*)",
-      "dest": "/meditation-app/dist/index.html"
-    },
-    {
-      "src": "^/music/?$",
-      "dest": "/music-therapy-app/build/index.html"
-    },
-    {
-      "src": "^/music/(.*)",
-      "dest": "/music-therapy-app/build/index.html"
-    }
+    { "src": "^/favicon.ico$", "dest": "/app-hub/dist/favicon.ico" },
+    { "src": "^/$", "dest": "/app-hub/dist/index.html" },
+
+    { "src": "^/meditation/?$", "dest": "/meditation-app/dist/index.html" },
+    { "src": "^/meditation/(.*)", "dest": "/meditation-app/dist/index.html" },
+
+    { "src": "^/music/?$", "dest": "/music-therapy-app/build/index.html" },
+    { "src": "^/music/(.*)", "dest": "/music-therapy-app/build/index.html" }
   ]
 }
