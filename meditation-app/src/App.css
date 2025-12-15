@@ -1,0 +1,114 @@
+/* ===============================
+   APP CONTAINER
+   =============================== */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #fff4ec 0%,
+    #ffe6db 50%,
+    #ffdede 100%
+  );
+}
+
+/* ===============================
+   MAIN LAYOUT
+   =============================== */
+.main-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===============================
+   CENTER CONTENT
+   =============================== */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #5a3a2e;
+  font-weight: 500;
+}
+
+/* ===============================
+   PANELS ALIGNMENT (from Code 1)
+   =============================== */
+.panel-left,
+.panel-right {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  gap: 20px;              /* space between buttons */
+  align-items: center;     /* center horizontally */
+  justify-content: flex-start; /* align to top like Code 1 */
+}
+
+/* ===============================
+   MODE BUTTONS (Code 2 styles)
+   =============================== */
+.mode-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid rgba(226, 91, 69, 0.25);
+
+  color: #6b3e32;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 8px 20px rgba(226, 91, 69, 0.12);
+}
+
+.mode-button:hover {
+  transform: scale(1.06);
+  background: #fff1ea;
+  border-color: rgba(226, 91, 69, 0.45);
+}
+
+.mode-button.active {
+  background: linear-gradient(135deg, #ffb4a2, #e25b45);
+  color: #fff;
+  border-color: #e25b45;
+}
+
+/* ===============================
+   PANEL BUTTONS (Code 2 styles)
+   =============================== */
+.panel-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #ffb4a2, #e25b45);
+  color: #fff;
+
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
+  box-shadow: 0 10px 24px rgba(226, 91, 69, 0.35);
+}
+
+.panel-btn:hover {
+  transform: scale(1.08);
+}
+
+.panel-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

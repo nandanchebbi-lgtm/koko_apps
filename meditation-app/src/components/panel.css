@@ -1,0 +1,92 @@
+/* ---- LAYOUT GRID ---- */
+.layout-grid {
+  display: grid;
+  grid-template-columns: 140px 1fr 140px; /* left, center, right */
+  height: 100vh;
+  width: 100vw;
+  background: #eef2f5;
+  align-items: center;        /* vertical centering for all columns */
+  justify-items: center;      /* horizontal centering for each column */
+}
+
+/* LEFT COLUMN */
+.left-column {
+  display: flex;
+  justify-content: center;    /* center horizontally inside left column */
+  align-items: center;        /* center vertically with center content */
+}
+
+/* CENTER COLUMN */
+.center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RIGHT COLUMN */
+.right-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---- PANELS ---- */
+.panel-left,
+.panel-right {
+  display: flex;
+  flex-direction: column; /* stack buttons vertically */
+  gap: 18px;              /* spacing between buttons */
+  align-items: center;
+  justify-content: center; /* vertical alignment in column */
+}
+
+/* ---- MODE BUTTONS ---- */
+.mode-button {
+  width: 120px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1.5px solid rgba(226, 91, 69, 0.3);
+  font-size: 16px;
+  font-weight: 500;
+  color: #6b3e32;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(226, 91, 69, 0.12);
+}
+
+.mode-button:hover {
+  transform: scale(1.06);
+  background: #fff1ea;
+}
+
+.mode-button.active {
+  background: linear-gradient(135deg, #ffb4a2, #e25b45);
+  color: #fff;
+  border-color: #e25b45;
+}
+
+/* ---- PANEL CONTROL BUTTONS ---- */
+.panel-btn {
+  width: 120px;
+  padding: 14px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #ffb4a2, #e25b45);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(226, 91, 69, 0.35);
+  transition: all 0.25s ease;
+}
+
+.panel-btn:hover {
+  transform: scale(1.06);
+}
+
+.panel-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
