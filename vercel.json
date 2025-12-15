@@ -6,21 +6,21 @@
       "src": "app-hub/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "outputDirectory": "app-hub/dist"
+        "outputDirectory": "dist"
       }
     },
     {
       "src": "meditation-app/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "outputDirectory": "meditation-app/dist"
+        "outputDirectory": "dist"
       }
     },
     {
       "src": "music-therapy-app/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "outputDirectory": "music-therapy-app/build"
+        "outputDirectory": "build"
       }
     }
   ],
