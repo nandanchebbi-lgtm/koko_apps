@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "install:apps": "npm install --prefix app-hub && npm install --prefix meditation-app && npm install --prefix music-therapy-app",
+    "postinstall": "chmod +x app-hub/node_modules/.bin/vite meditation-app/node_modules/.bin/vite || true",
     "build": "npm run install:apps && npm run build --prefix app-hub && npm run build --prefix meditation-app && npm run build --prefix music-therapy-app"
   }
 }
