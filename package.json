@@ -1,0 +1,7 @@
+{
+  "name": "koko-apps",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --prefix app-hub && npm run build --prefix meditation-app && npm run build --prefix music-therapy-app"
+  }
+}

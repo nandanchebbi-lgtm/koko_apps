@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "^/$", "dest": "/app-hub/dist/index.html" },
+    { "src": "^/meditation(/.*)?$", "dest": "/meditation-app/dist/index.html" },
+    { "src": "^/music(/.*)?$", "dest": "/music-therapy-app/build/index.html" }
+  ]
+}
