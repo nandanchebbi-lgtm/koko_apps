@@ -3,12 +3,12 @@ import React from "react";
 const apps = [
   {
     name: "Meditation App",
-    url: "/meditation",
+    url: "https://koko-apps.vercel.app/",
     icon: "/icons/meditation.png"
   },
   {
     name: "Music Therapy App",
-    url: "/music",
+    url: "https://koko-apps-l2aw.vercel.app/",
     icon: "/icons/music.png"
   }
 ];
@@ -27,7 +27,7 @@ function AppHub() {
         <a
           key={app.name}
           href={app.url}
-          target="_blank"      // Opens each app in a new tab
+          target="_blank"
           rel="noopener noreferrer"
           style={{
             display: "flex",
